@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :comments
+
+  resources :entries
+
+  resources :blogs
+
+  devise_for :users
   get 'pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
