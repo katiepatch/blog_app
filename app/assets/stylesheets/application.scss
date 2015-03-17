@@ -15,11 +15,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html {
+body {
 font-family: 'Open Sans', sans-serif;
-font-family: 'Gentium Book Basic', serif;
+// font-family: 'Gentium Book Basic', serif;
 text-align: center;
 font-size: 20px;
+color: white;
+background: orange;
+}
+
+.navbar {
+  background: orange;
+  color: white;
+  padding: none;
+  border: orange;
 }
 
 h1 {
@@ -29,21 +38,25 @@ h1 {
 .btn-lg {
 background: orange;
 list-style-type: none;
-padding: 20px;
 width: 15%;
 margin-top: 2em;
+border: .2em solid white;
+border-radius: 0;
+  :hover, :active {
+    letter-spacing: 5px;
+    }
 
-a {
-  color:white;
+  a {
+    color:white;
 
-/* visited link */
+  /* visited link */
     &:visited {
       color: white;
       text-decoration: none;
     }
     /* mouse over link */
     &:hover {
-      color: white;
+      color: orange;
       text-decoration: none;
     }
   }
