@@ -1,3 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid">
+  <h1>Welcome!</h1>
+    <% if user_signed_in? %>
+      <button type="button" class="btn btn-default btn-lg">
+        <a href="/blogs">My Blogs</a>
+      </button>
+      <button type="button" class="btn btn-default btn-lg">
+        <a href="/blog/new">Create Blog</a>
+      </button>
+      <button type="button" class="btn btn-default btn-lg">
+        <a href="">Explore</a>
+      </button>
+    <% else %>
+      <button type="button" class="btn btn-default btn-lg">
+        <%= render 'devise/menu/login_items' %>
+      </button>
+      <button type="button" class="btn btn-default btn-lg">
+        <a href="">Explore</a>
+      </button>
+    <% end %>
 
+</div>
