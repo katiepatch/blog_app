@@ -43,6 +43,8 @@ margin-top: 2em;
 border: .2em solid white;
 border-radius: .2em;
 padding: 1em;
+text-shadow: .05em .05em 0 gray;
+box-shadow: .05em .05em 0 gray;
   :hover, :active {
     letter-spacing: 5px;
     }
@@ -71,5 +73,22 @@ padding: 1em;
   background-color: #A4DCC9;
   padding-top: .7em;
   color: gray;
+  #year {
+    text-align: left;
+  }
+  #code {
+    text-align: right;
+  }
+  a {
+    color: gray;
+    &:visited {
+      color: gray;
+      text-decoration: none;
+    }
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 

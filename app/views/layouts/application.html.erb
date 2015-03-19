@@ -53,8 +53,14 @@
 <%= yield %>
 
 <footer class="footer">
-  <div class="container">
-    <p>&copy; <%= Time.now.year %></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="year" class="col-sm-6">
+        <p>&copy; <%= Time.now.year %></p>
+      </div>
+      <div id="code" class="col-sm-6">
+        <a href="https://github.com/katiepatch/blog_app">Source Code</a>
+      </div>
   </div>
 </footer>
 
