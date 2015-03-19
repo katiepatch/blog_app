@@ -10,7 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ /*
+ *= require font-awesome
  */
+
 
 @import "bootstrap";
 
@@ -71,8 +74,9 @@ box-shadow: .05em .05em 0 gray;
   width: 100%;
   height: 60px;
   background-color: #A4DCC9;
-  padding-top: .7em;
+  padding-top: .9em;
   color: gray;
+  font-size: .9em;
   #year {
     text-align: left;
   }
