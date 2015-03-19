@@ -30,7 +30,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-rails'
 # Populate false sample data
 gem 'faker'
-gem 'populate'
+gem 'populator'
 # Debugging information
 gem 'pry'
 gem 'pry-rails'
