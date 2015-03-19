@@ -39,40 +39,46 @@ margin-bottom: 3em;
   border: orange;
 }
 
-#greeting {
-  font-size: 5em;
-  text-shadow: .02em .02em 0 gray;
+#home {
+  margin-top: 5%;
 }
 
-#main-btn {
-background: orange;
-list-style-type: none;
-width: 15%;
-margin-top: 2em;
-border: .2em solid white;
-border-radius: .2em;
-padding: 1em;
-text-shadow: .05em .05em 0 gray;
-box-shadow: .05em .05em 0 gray;
-  :hover, :active {
-    letter-spacing: 5px;
-    }
+  #greeting {
+    font-size: 5em;
+    text-shadow: .02em .02em 0 gray;
+  }
 
-  a {
-    color:white;
+  #main-btn {
+  background: orange;
+  list-style-type: none;
+  width: 15%;
+  margin-top: 2em;
+  border: .2em solid white;
+  border-radius: .2em;
+  padding: 1em;
+  text-shadow: .05em .05em 0 gray;
+  box-shadow: .05em .05em 0 gray;
+    &:hover, &:active {
+      letter-spacing: 5px;
+      border: solid #A4DCC9;
+      }
 
-  /* visited link */
-    &:visited {
-      color: white;
-      text-decoration: none;
-    }
-    /* mouse over link */
-    &:hover {
-      color: white;
-      text-decoration: none;
+    a {
+      color:white;
+
+    /* visited link */
+      &:visited {
+        color: white;
+        text-decoration: none;
+      }
+      /* mouse over link */
+      &:hover {
+        color: #A4DCC9;
+        text-decoration: none;
+      }
     }
   }
-}
+
 
 .footer {
   height: 3em;
