@@ -28,6 +28,14 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
 # adding font-awesomeness for icons
 gem 'font-awesome-rails'
+# Populate false sample data
+gem 'faker'
+gem 'populate'
+# Debugging information
+gem 'pry'
+gem 'pry-rails'
+# Annotate models
+gem 'annotate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
