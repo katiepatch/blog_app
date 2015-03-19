@@ -1,22 +1,21 @@
 <div class="container-fluid">
-  <h1>Welcome!</h1>
+  <h1 id="greeting">Welcome!</h1>
     <% if user_signed_in? %>
-      <button type="button" class="btn btn-default btn-lg">
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
         <a href="/blogs">My Blogs</a>
       </button>
-      <button type="button" class="btn btn-default btn-lg">
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
         <a href="/blog/new">Create Blog</a>
       </button>
-      <button type="button" class="btn btn-default btn-lg">
+      <button type="button" id="main-btn"class="btn btn-default btn-lg">
         <a href="">Explore</a>
       </button>
     <% else %>
-      <button type="button" class="btn btn-default btn-lg">
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
         <%= render 'devise/menu/login_items' %>
       </button>
-      <button type="button" class="btn btn-default btn-lg">
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
         <a href="">Explore</a>
       </button>
     <% end %>
-
-</div>
+  </div>
