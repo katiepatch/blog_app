@@ -11,6 +11,7 @@
  * file per style scope.
  *
  /*
+ // require 'blogs'
  *= require font-awesome
  */
 
@@ -36,14 +37,16 @@ margin-bottom: 3em;
   background: #CCCCCC;
   padding: none;
   border: #CCCCCC;
-}
+  color: white;
 
 a {
   text-decoration: none;
   color: gray;
-  &:hover, &:active {
-    text-decoration: none;
-    color: #003399;
+    &:hover, &:active {
+      text-decoration: none;
+      color: white;
+      font-size: 1.02em;
+    }
   }
 }
 
@@ -120,17 +123,54 @@ a {
   }
 }
 
+.devise-links {
+  background-color: #99CCCC;
+  padding: 1em 3em 3em 3em;
+  border: solid #003399;
+  border-radius: 0.3em;
+  margin: 0 auto;
+  width: 20em;
+  text-align: center;
+  color: #003399;
+  a {
+    color: gray;
+    &:hover, &:active {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.action {
+    background: white;
+  }
+
+.other-links {
+    font-size: 0.7em;
+    margin-top: 2em;
+    padding: 10px;
+    border: .2em solid #003399;
+    border-radius: 0.5em;
+    a {
+      padding: 2px;
+    }
+  }
+
+
 h1 {
   text-shadow: .05em .05em 0 gray;
+  padding-bottom: .5em;
+  margin-top: 0;
 }
 
 .blog-page {
   width: 100%;
-  height: 10em;
+  height: 12em;
   white-space: normal;
   color: #003399;
   border: .2em solid #99CCCC;
 }
+
 
 .entry {
   color: #003399;
