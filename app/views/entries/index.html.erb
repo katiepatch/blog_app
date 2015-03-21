@@ -4,10 +4,10 @@
 
 <div class="row container-fluid entries">
     <% @entries.each do |entry| %>
-    <div class="entry container-fluid"></div>
+    <div class="entry container">
         <h2><%= entry.title %></h2>
         <p><%= entry.text %></p>
-        <img src="<%= entry.image %>"></img><br>
+        <img src="<%= entry.image %>"></img>
         <img src="<%= entry.video %>"></img>
     </div>
         <p>
@@ -16,6 +16,7 @@
           <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %>
         </p>
     <% end %>
+  </div>
 
 <br>
 
