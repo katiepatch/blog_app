@@ -124,9 +124,9 @@ a {
 }
 
 .devise-links {
-  background-color: #99CCCC;
+  background-color: white;
   padding: 1em 3em 3em 3em;
-  border: solid #003399;
+  border: solid #99CCCC;
   border-radius: 0.3em;
   margin: 0 auto;
   width: 20em;
@@ -136,20 +136,16 @@ a {
     color: gray;
     &:hover, &:active {
       text-decoration: none;
-      color: white;
+      color: #003399;
     }
   }
 }
-
-.action {
-    background: white;
-  }
 
 .other-links {
     font-size: 0.7em;
     margin-top: 2em;
     padding: 10px;
-    border: .2em solid #003399;
+    border: .2em solid #99CCCC;
     border-radius: 0.5em;
     a {
       padding: 2px;
@@ -175,4 +171,5 @@ h1 {
 .entry {
   color: #003399;
   border: .1em solid #99CCCC;
+  background-color: white;
 }
