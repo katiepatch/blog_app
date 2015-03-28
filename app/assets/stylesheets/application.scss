@@ -27,29 +27,44 @@ body {
 font-family: 'Open Sans', sans-serif;
 // font-family: 'Gentium Book Basic', serif;
 text-align: center;
-font-size: 20px;
-color: white;
-background: #FF9933;
+font-size: 16px;
+color: black;
+background: white;
 margin-bottom: 3em;
 }
 
-.navbar {
-  background: #CCCCCC;
-  padding: none;
-  border: #CCCCCC;
-  color: white;
+/*-----------------------------navbar style----------------------------------*/
 
-a {
-  text-decoration: none;
+.navbar .navbar-transparent a, a:visited {
   color: gray;
-    &:hover, &:active {
-      text-decoration: none;
-      color: white;
-      font-size: 1.02em;
-    }
-  }
+  font-size: .7em;
 }
 
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus {
+    color: #45ef9a;
+    background-color: white;
+    }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: gray;
+}
+
+.navbar .navbar-toggle:hover {
+  background-color: turquoise;
+}
+
+/*-----------------------------end navbar style ----------------------------------*/
 
 #home {
   margin-top: 5%;
@@ -57,37 +72,37 @@ a {
 
   #greeting {
     font-size: 5em;
-    text-shadow: .02em .02em 0 gray;
+    // text-shadow: .02em .02em 0 gray;
   }
 
   #main-btn {
-  background: #FF9933;
+  background: white;
   list-style-type: none;
   width: 20%;
   margin-top: 1.5em;
   margin-right: 1em;
   margin-left: 1em;
-  border: .2em solid white;
+  border: .2em solid black;
   border-radius: .2em;
   padding: 1.5em;
-  text-shadow: .05em .05em 0 gray;
-  box-shadow: .05em .05em 0 gray;
+  // text-shadow: .05em .05em 0 gray;
+  // box-shadow: .05em .05em 0 gray;
     &:hover, &:active {
       letter-spacing: 5px;
-      border: solid #003399;
+      border: solid #45ef9a;
       }
 
     a {
-      color:white;
+      color:black;
 
     /* visited link */
       &:visited {
-        color: white;
+        color: black;
         text-decoration: none;
       }
       /* mouse over link */
       &:hover {
-        color: white;
+        // color: orange;
         text-decoration: none;
       }
     }
@@ -96,7 +111,7 @@ a {
 
 .footer {
   height: 3em;
-  background-color: #99CCCC;
+  background-color: white;
   color: gray;
   padding-top: 1em;
   overflow: auto;
@@ -117,7 +132,7 @@ a {
       text-decoration: none;
     }
     &:hover {
-      color: white;
+      color: #45ef9a;
       text-decoration: none;
     }
   }
@@ -126,26 +141,26 @@ a {
 .forms {
   background-color: white;
   padding: 1em 3em 3em 3em;
-  border: solid #99CCCC;
+  border: solid black;
   border-radius: 0.3em;
   margin: 0 auto;
   width: 25em;
   text-align: center;
-  color: #003399;
+  color: black;
   a {
     color: gray;
     &:hover, &:active {
       text-decoration: none;
-      color: #003399;
+      color: #45ef9a;
     }
   }
 }
 
 .other-links {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-top: 2em;
     padding: 10px;
-    border: .2em solid #99CCCC;
+    border: .2em solid black;
     border-radius: 0.5em;
     a {
       padding: 2px;
@@ -154,7 +169,7 @@ a {
 
 
 h1 {
-  text-shadow: .05em .05em 0 gray;
+  // text-shadow: .05em .05em 0 gray;
   padding-bottom: .5em;
   margin-top: 0;
 }
@@ -163,16 +178,22 @@ h1 {
   width: 100%;
   height: 12em;
   white-space: normal;
-  color: #003399;
-  border: .2em solid #99CCCC;
-  a {
-    color: gray;
-  }
+  color: black;
+  border: .2em solid black;
 }
 
 
 .entry {
-  color: #003399;
-  border: .1em solid #99CCCC;
+  color: black;
+  border: .1em solid black;
   background-color: white;
 }
+
+a, a:visited {
+  color: black;
+}
+
+ a:hover {
+    color: #45ef9a;
+    text-decoration: none;
+  }
