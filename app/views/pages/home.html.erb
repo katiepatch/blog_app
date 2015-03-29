@@ -5,20 +5,20 @@
   <% if user_signed_in? %>
 
     <div class="col-md-4">
-    <button type="button" id="main-btn" class="btn btn-default btn-lg">
-      <a href="/blogs"><i class="fa fa-arrow-right"> My Blogs</i></a>
-    </button>
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
+        <a href="/blogs"><i class="fa fa-arrow-right"> My Blogs</i></a>
+      </button>
     </div>
     <div class="col-md-4">
-    <button type="button" id="main-btn" class="btn btn-default btn-lg">
-      <a href="/blogs/new"><i class="fa fa-plus"> New Blog</i></a>
-    </button>
-  </div>
-  <div class="col-md-4">
-    <button type="button" id="main-btn"class="btn btn-default btn-lg">
-      <a href="/blogs"><i class="fa fa-eye"> Explore</i></a>
-    </button>
-  </div>
+      <button type="button" id="main-btn" class="btn btn-default btn-lg">
+        <a href="/blogs/new"><i class="fa fa-plus"> New Blog</i></a>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <button type="button" id="main-btn"class="btn btn-default btn-lg">
+        <a href="/blogs"><i class="fa fa-eye"> Explore</i></a>
+      </button>
+    </div>
   <% else %>
     <button type="button" id="main-btn" class="btn btn-default btn-lg">
       <%= render 'devise/menu/login_items' %>

@@ -70,20 +70,52 @@ margin-bottom: 3em;
   margin-top: 5%;
 }
 
-  #greeting {
-    font-size: 5em;
-    // text-shadow: .02em .02em 0 gray;
-  }
+#greeting {
+  font-size: 5em;
+  // text-shadow: .02em .02em 0 gray;
+}
 
-  #main-btn {
+#main-btn {
+background: white;
+list-style-type: none;
+margin-top: 1.5em;
+margin-right: 1em;
+margin-left: 1em;
+border: .2em solid black;
+border-radius: .2em;
+padding: 1.5em;
+width: 200px;
+// text-shadow: .05em .05em 0 gray;
+// box-shadow: .05em .05em 0 gray;
+  &:hover, &:active {
+    letter-spacing: 5px;
+    border: solid #45ef9a;
+    }
+
+  a {
+    color:black;
+
+  /* visited link */
+    &:visited {
+      color: black;
+      text-decoration: none;
+    }
+    /* mouse over link */
+    &:hover {
+      // color: orange;
+      text-decoration: none;
+    }
+  }
+}
+
+
+#sm-btn {
   background: white;
   list-style-type: none;
-  margin-top: 1.5em;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-bottom: 1em;
   border: .2em solid black;
   border-radius: .2em;
-  padding: 1.5em;
+  // padding: .8em;
   width: 200px;
   // text-shadow: .05em .05em 0 gray;
   // box-shadow: .05em .05em 0 gray;
@@ -105,8 +137,8 @@ margin-bottom: 3em;
         // color: orange;
         text-decoration: none;
       }
-    }
   }
+}
 
 
 .footer {
