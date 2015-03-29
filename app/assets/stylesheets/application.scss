@@ -112,7 +112,6 @@ width: 200px;
 #sm-btn {
   background: white;
   list-style-type: none;
-  margin-bottom: 1em;
   border: .2em solid black;
   border-radius: .2em;
   // padding: .8em;
@@ -137,6 +136,9 @@ width: 200px;
         // color: orange;
         text-decoration: none;
       }
+  }
+  p {
+    margin-bottom: 5px;
   }
 }
 
@@ -217,8 +219,38 @@ h1 {
 
 .entry {
   color: black;
-  border: .1em solid black;
+  border: .15em solid black;
   background-color: white;
+  width: 80%;
+}
+
+.entry-top {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.navbar-form {
+  margin-top: 0em;
+  .form-control {
+  border: .2em solid black;
+  border-radius: .2em;
+  height: 55px;
+  font-size: 16px;
+  color: #45ef9a;
+  }
+}
+
+.submit {
+  border: .2em solid black;
+  border-radius: .2em;
+  height: 55px;
+  width: 125px;
+  font-size: 16px;
+  &:hover, &:active {
+    background: white;
+    letter-spacing: 5px;
+    border: solid #45ef9a;
+  }
 }
 
 a, a:visited {
