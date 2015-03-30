@@ -5,12 +5,12 @@
 <div class="row container-fluid">
   <% @blogs.each do |blog| %>
     <div id="blogs" class="col-md-4 container-fluid">
-      <a class="btn btn-default blog-page" href="#" role="button">
+      <a class="btn btn-default blog-page" href="/entries" role="button">
         <h2><%= blog.title %></h2>
         <p><%= blog.description %></p>
       </a>
         <p>
-          <%= link_to 'Show', blog %>
+          <a href="/entries">Show</a>
           <%= link_to 'Edit', edit_blog_path(blog) %>
           <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
         </p>
