@@ -115,7 +115,7 @@ width: 200px;
   border: .2em solid black;
   border-radius: .2em;
   // padding: .8em;
-  width: 200px;
+  width: 100%;
   // text-shadow: .05em .05em 0 gray;
   // box-shadow: .05em .05em 0 gray;
     &:hover, &:active {
@@ -223,19 +223,22 @@ h1 {
   background-color: white;
 }
 
-.entry-top {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+// .entry-top {
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+// }
 
 .navbar-form {
   margin-top: 0em;
+  width: 100%;
   .form-control {
   border: .2em solid black;
   border-radius: .2em;
   height: 55px;
   font-size: 16px;
   color: #45ef9a;
+  width: 100%;
+  margin-bottom: 1em;
   }
 }
 
@@ -243,8 +246,10 @@ h1 {
   border: .2em solid black;
   border-radius: .2em;
   height: 55px;
-  width: 125px;
+  width: 40%;
   font-size: 16px;
+  margin-left: 5px;
+  margin-bottom: 1em;
   &:hover, &:active {
     background: white;
     letter-spacing: 5px;
